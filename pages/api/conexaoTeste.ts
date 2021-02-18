@@ -12,10 +12,10 @@ export default async (
 
     const {db} = await connect();
 
-    const reponse = await db.collection('collectionTeste').insertOne({
-        name: 'Rodrigo',
+    const response = await db.collection('collectionTeste').insertOne({
+        name: 'Bruno2',
         age: 22,
     });
 
-    res.status(200).json({message: 'Foi'});
+    res.status(200).json(response.ops[0]);
 };
