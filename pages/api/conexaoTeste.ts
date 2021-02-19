@@ -13,8 +13,8 @@ export default async (
     const {db} = await connect();
 
     const response = await db.collection('collectionTeste').insertOne({
-        name: 'Bruno2',
-        age: 22,
+        name: 'Christou',
+        age: 34,
     });
 
     res.status(200).json(response.ops[0]);
